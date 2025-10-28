@@ -1,0 +1,388 @@
+* {
+                 font-family: "Saira", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+            table {
+                margin:auto;
+                width: 25%;
+                background-color: #ffffff
+            }
+a { color:dimgray;
+    text-decoration: none;
+}
+a:hover { color: darkorange}
+body {
+    margin: 10px;
+}
+.image-grid {
+    margin-top: 20px;
+    --gap: 10px;
+    --num-cols: 4;
+    --row-height: 200px;
+    
+    box-sizing: border-box;
+    padding: var(--gap);
+    
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    grid-column: 2/ span 2;
+    grid-row: 2/ span 1;
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    justify-content: center;
+    align-items: center;
+    text-align-last: center;
+    background: #fff;
+    padding: 5vw 1vw;
+    z-index: 2;
+}
+
+.overlay-text h1 {
+  font-family: "Waterfall", cursive;
+  font-weight: 400;
+  font-style: normal;
+    margin: 20px;
+    font-size: 50px
+}
+
+.overlay-text h5 {
+    margin:0;
+    font-weight: normal;
+}
+
+.overlay-text h6 {
+    margin: 20px;
+}
+
+.overlay-text a {
+    color:rgba(204, 124, 26, 0.73);
+    text-decoration: underline;
+}
+
+.SecondNav {
+    width: 100%;
+    background-color: #f7f7f7;
+    color:#ff8c00;
+}
+
+#Postcards-grid {
+    margin-top: 20px;
+    justify-content:center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    --gap: 10px;
+    --wide-col: 2.25fr;
+    --num-cols: 4;
+    --row-height: auto;
+    
+    box-sizing: border-box;
+    padding: var(--gap);
+    
+    display: grid;
+    position: relative;
+    grid-template-columns:var(--wide-col) 1fr 1fr 1fr ;
+    grid-auto-rows:auto;
+    gap: var(--gap);
+}
+
+#Postcards-grid img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+#Postcards-text {
+    width: 50%;
+    text-align-last: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Postcards-text h3 {
+    font-family: "Waterfall", cursive;
+  font-weight: 200;
+  font-style: italic;
+    font-size: 30px;
+    margin: 20px;
+}
+
+
+
+#Portraits-grid {
+    margin-top: 20px;
+    justify-content:center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    --gap: 10px;
+    --wide-col: 2.25fr;
+    --num-cols: 4;
+    --row-height: auto;
+    
+    box-sizing: border-box;
+    padding: var(--gap);
+    
+    display: grid;
+    position: relative;
+    grid-template-columns: var(--wide-col) 1fr 1fr var(--wide-col);
+    grid-auto-rows:auto;
+    gap: var(--gap);
+}
+
+#Portraits-grid img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+#Portraits-text {
+    width: 50%;
+    text-align-last: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#Portraits-text h3 {
+    font-family: "Waterfall", cursive;
+  font-weight: 200;
+  font-style: italic;
+    font-size: 30px;
+    margin: 20px;
+}
+
+
+
+#Landscape-grid {
+    margin-top: 20px;
+    justify-content:center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    --gap: 10px;
+    --wide-col: 2.25fr;
+    --num-cols: 4;
+    --row-height: auto;
+    
+    box-sizing: border-box;
+    padding: var(--gap);
+    
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr var(--wide-col) 1fr 1fr;
+    grid-auto-rows:auto;
+    gap: var(--gap);
+}
+
+#Landscape-grid img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+#Landscape-text {
+    width: 50%;
+    text-align-last: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#Landscape-text h3 {
+    font-family: "Waterfall", cursive;
+  font-weight: 200;
+  font-style: italic;
+    font-size: 30px;
+    margin: 20px;
+}
+
+
+
+#Architecture-grid {
+    margin-top: 20px;
+    justify-content:center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    --gap: 10px;
+    --wide-col: 2.25fr;
+    --num-cols: 4;
+    --row-height: auto;
+    
+    box-sizing: border-box;
+    padding: var(--gap);
+    
+    display: grid;
+    position: relative;
+    grid-template-columns:1fr 1fr var(--wide-col) 1fr;
+    grid-auto-rows:auto;
+    gap: var(--gap);
+}
+
+#Architecture-grid img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#Architecture-text {
+    width: 50%;
+    text-align: center;
+    justify-content:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Architecture-text ul {
+    font-size: small;
+    font-weight: normal;
+    color: #bf884f;
+}
+
+
+#Architecture-text > h3 {
+    font-family: "Waterfall", cursive;
+  font-weight: 200;
+  font-style: italic;
+    font-size: 30px;
+    margin: 20px;
+}
+
+
+#Gallery {
+    table-layout:fixed;
+    justify-content:center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    width: 60%;
+    
+}
+
+#Gallery th {
+    padding: 2px;
+    width: auto;
+}
+
+
+#Gallery img {
+    max-width: 100%;
+    object-fit: cover;    
+    margin: 0;
+}
+
+#Gallery a {
+    margin-top: 0;
+    padding: 0;
+    font-family: "Waterfall", cursive;
+  font-style: normal;
+    font-weight: normal;
+    font-size: 1.5vw;
+}
+
+#Gallery-text {
+    padding-bottom: 30px;
+    width: 50%;
+    font-size: small;
+     text-align: left;
+    justify-content:center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Gallery-text h4 {
+    font-weight: normal;
+    margin-top: 0;
+}
+
+#Gallery-text ol {
+    font-size: small;
+    text-align-last: left;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+}
+
+#Gallery-text li {
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+#Gallery-text ul {
+    font-style: normal;
+    font-weight: lighter;
+    text-align: left;
+}
+
+#Info {
+ table-layout:fixed;
+    justify-content:center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 70%;
+    
+}
+
+#Info img {
+ width: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+#Info p {
+    margin: 0;
+    padding: 10px;
+    border: none;
+    font-weight: normal;
+    font-size: small;
+    text-align: left;
+}
+
+#Info li {
+    font-weight: normal;
+    font-size: small
+}
+
+
+
+
+.footer {
+    position: relative;
+    bottom: 0;
+    text-align-last: left;
+    color:darkgrey;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
